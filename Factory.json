@@ -1,0 +1,88 @@
+[
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "contract EscrowService",
+				"name": "escrow",
+				"type": "address"
+			}
+		],
+		"name": "CreatedEscrow",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address payable",
+				"name": "buyeraddress",
+				"type": "address"
+			},
+			{
+				"internalType": "address payable",
+				"name": "selleraddress",
+				"type": "address"
+			},
+			{
+				"internalType": "uint32",
+				"name": "amount",
+				"type": "uint32"
+			},
+			{
+				"internalType": "address",
+				"name": "Token",
+				"type": "address"
+			}
+		],
+		"name": "CreateNewEscrow",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "EscrowArray",
+		"outputs": [
+			{
+				"internalType": "contract EscrowService",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getNumberofescrowMade",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getescrowClone",
+		"outputs": [
+			{
+				"internalType": "contract EscrowService[]",
+				"name": "",
+				"type": "address[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
